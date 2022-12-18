@@ -1,0 +1,51 @@
+<%- include('header') -%>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Comparison</h1>
+        </div>
+        <div class="row">
+            <% for (let city=0; city < newCityList.length; city++){ %>
+                <div class="col-sm-5 city">
+                    <h1 class="display-6 fw">
+                        <%= newCityList[city].cityHTML %>
+                    </h1>
+                    <div class="city-LR">
+                        <div class="left">
+                            <img class="image" src=<%=newCityList[city].iconCityHTML %>>
+                            <div class="temperature">
+                                <h1 class="fw-normal">
+                                    <%= newCityList[city].temperatureCityHTML %>ºC
+                                </h1>
+                                <h5 class="fw-light">RealFeel <%= newCityList[city].temperatureFeelCityHTML %>ºC</h5>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p class="lead mb-4 data">
+                                <%= newCityList[city].descriptionCityHTML %>
+                            </p>
+                            <div class="data">
+                                <p class="lead mb-4 desc">Humidity:</p>
+                                <p class="lead mb-4 value fw-normal">
+                                    <%= newCityList[city].humidityCityHTML %>%
+                                </p>
+                            </div>
+                            <div class="data">
+                                <p class="lead mb-4 desc">Wind:</p>
+                                <p class="lead mb-4 value fw-normal">
+                                    <%= newCityList[city].windCityHTML %>kph <%= newCityList[city].windDirCityHTML %>
+                                </p>
+                            </div>
+                            <div class="data">
+                                <p class="lead mb-4 desc">Data:</p>
+                                <p class="lead mb-4 value fw-normal">
+                                    <%= newCityList[city].localTimeCityHTML %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    </script>
+    <%- include('footer') -%>

@@ -1,0 +1,29 @@
+<%- include('header') -%>
+    <div class="modal modal-sheet d-block py-5" tabindex="-1" role="dialog" id="modalSheet">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-header border-bottom-0">
+                    <h1>Weather Comparison</h1>
+                </div>
+                <div class="modal-body py-0">
+                    <form class="lead mb-2" action="/cities" method="post">
+                        <div class="formInputs">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Cities quantity
+                                    </span>
+                                    <input type="number" min="2" class="form-control" aria-label="Sizing example input"
+                                        name="citiesQtd" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                        </div>
+                        <div class="button"><button class="btn btn-secondary" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="logo">
+                <!-- <img class="logo-img" src="/img/icons8-weather-512.png" width="6%"> -->
+                <span class="logo-text">© CMP Weather 2022</span>
+        </div>
+        </div>
+    </div>
+    </div>
+    <%- include('footer') -%>

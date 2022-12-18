@@ -1,0 +1,115 @@
+.image {
+  width: 30%;
+}
+
+.logo {
+  color: azure;
+  display: flex;
+  justify-content: right;
+}
+
+body {
+  background-image: url("/img/background-img2.jpg");
+  background-attachment: scroll;
+}
+
+.container {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  /* border: 1px solid rgb(192, 192, 192); */
+  /* border-radius: 2%; */
+  /* background-color: rgba(158, 158, 158, 0.9); */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header {
+  border-radius: 2%;
+  margin-left: -1%;
+  margin-right: -1%;
+  display: flex;
+  justify-content: center;
+  color: white
+    /* color: rgb(255, 255, 255); */
+}
+
+.modal-content {
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, .25);
+  color: white
+}
+
+.modal-header {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.input-group-text {
+  color: rgb(0, 0, 0)
+}
+
+.city {
+  width: 40%;
+  border: 1px solid #000;
+  border-radius: 6px;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, .25);
+  /* border-color: rgb(120, 119, 119); */
+  margin: 10px;
+  /* background-color: rgba(255,255,255,0.5); */
+  color: white
+}
+
+.city .city-LR {
+  display: flex;
+  border-style: hidden;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature {
+  display: inline-block;
+  text-align: left;
+  vertical-align: auto;
+}
+
+.right {
+  justify-content: center;
+  width: 47%;
+}
+
+.display-6 {
+  text-align: center;
+}
+
+.mb-4 {
+  border-bottom: 1px solid #000;
+  border-color: rgb(171, 1, 1);
+}
+
+.data {
+  display: flex;
+}
+
+.value {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
