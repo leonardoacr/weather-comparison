@@ -14,20 +14,20 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // require node:path to replace \ to / into dirname
-const path = require('node:path');
+// const path = require('node:path');
 
 // Taking __dirname and turning to string so we can change /public directory
-let pathDIR = __dirname;
-let formatDIR = pathDIR.split(path.sep).join('/');
-console.log(pathDIR)
-let rootPath = formatDIR + "/public";
+// let pathDIR = __dirname;
+// let formatDIR = pathDIR.split(path.sep).join('/');
+// console.log(pathDIR)
+// let rootPath = formatDIR + "/public";
 
 // define public and static folder (js and css files)
-app.use(express.static(rootPath));
+app.use(express.static("public"));
 
-viewsPath = formatDIR + "/views";
+// viewsPath = formatDIR + "/views";
 // setting up EJS
-app.set('views', viewsPath);
+// app.set('views', viewsPath);
 app.set('view engine', 'ejs');
 
 // get requisition w/ express
@@ -56,8 +56,9 @@ app.post('/result', async (req, res) => {
 });
 
 // chosing port to the server
-app.listen(3000, function () {
-    console.log("Server started on port 3000")
+const port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log(`Server started on port ${port}`)
 });
 
 const getCity = async (city, lang) => {
