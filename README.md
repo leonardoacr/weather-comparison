@@ -1,6 +1,8 @@
 ﻿# weather-comparison
 
-This website compare the weather of two or more cities around the world! 
+This website compare the weather of two or more cities around the world!
+
+Technology used: NodeJS - Express, EJS, HTTPS standard library. And for styling - CSS w/ Bootstrap 5.
 
 Live website:
 https://weather-comparison.onrender.com/
